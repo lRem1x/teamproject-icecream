@@ -1,0 +1,2 @@
+var btnScrollToTop=document.querySelector(".btn-scroll-to-top"),docHeader=document.querySelector("header");function scrollFunction(){document.body.scrollTop>20||document.documentElement.scrollTop>20?btnScrollToTop.classList.remove("btn-hidden"):btnScrollToTop.classList.add("btn-hidden")}window.onscroll=function(){scrollFunction()},btnScrollToTop.onclick=function(o){docHeader.scrollIntoView({behavior:"smooth"})};
+//# sourceMappingURL=index.722bc38c.js.map
