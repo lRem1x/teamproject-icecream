@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paradise Ice cream</title>
+    <link rel="icon" href="./images/favicon/favicon.ico" />
+    <link rel="icon" href="./images/favicon/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./images/favicon/apple-touch-icon.png" />
+    <!-- <link rel="manifest" href="./images/favicon/site.webmanifest"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Seymour+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.1/keen-slider.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="./sass/index.scss" />
+  </head>
+  <body>
+    <!-- Yulia Myhailiuk -->
+    <include src="./partials/header.html"></include>
+
+    <!-- Natalia Neizmailova -->
+    <include src="./partials/buy-now-modal.html"></include>
+    <include src="./partials/buy-now-modal-mob.html"></include>
+
+    <!-- Philip Belan -->
+    <include src="./partials/hero.html"></include>
+
+    <!-- Alex Ionin -->
+    <include src="./partials/products.html"></include>
+
+    <!-- Maria Dekhtiaruk -->
+    <include src="./partials/modal-ingridients.html"></include>
+    <include src="./partials/modal-ingridients-1.html"></include>
+    <include src="./partials/modal-ingridients-2.html"></include>
+
+    <!-- Sasha Mirko -->
+    <include src="./partials/about.html"></include>
+    <include src="./partials/about-modal.html"></include>
+
+    <!-- Julia Meshchaninova -->
+    <include src="./partials/advantages.html"></include>
+
+    <!-- Sergei Cherenkov -->
+    <include src="./partials/gallery.html"></include>
+    <include src="./partials/customer-reviews.html"></include>
+
+    <!-- Roman Balakleets -->
+    <include src="./partials/contacts.html"></include>
+    <include src="./partials/locations-modal.html"></include>
+
+    <!-- Vlad Veselov -->
+    <include src="./partials/franchise-modal.html"></include>
+    <include src="./partials/footer.html"></include>
+
+    <include src="./partials/btn-scroll-to-top.html"></include>
+
+    <!-- JS scripts -->
+    <script type="module" src="./index.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/keen-slider@6.8.1/keen-slider.min.js"></script>
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="./js/jquery.spincrement.min.js"></script>
+    <script>
+      jQuery(document).ready(function ($) {
+        $('.counter').spincrement({
+          thousandSeparator: '',
+          duration: 5200,
+        });
+      });
+    </script>
+    <script src="./js/smooth_scroll.js"></script>
+    <script src="./js/btn-scroll-to-top.js"></script>
+  </body>
+</html>

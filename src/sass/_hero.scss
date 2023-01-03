@@ -1,0 +1,427 @@
+.background {
+    background-color: var(--primary-bg-color);
+        animation: bg-color 10s infinite;
+    
+        @keyframes bg-color {
+            0% {
+                background-color: var(--primary-bg-color);
+            }
+    
+            25% {
+                background-color: #f59935;
+            }
+    
+            50% {
+                background-color: #ed61a2;
+            }
+    
+            75% {
+                background-color: #72c487;
+            }
+
+            100% {
+                background-color: var(--primary-bg-color);
+            }
+        }
+    width: 100%;
+    height: 502px;
+    padding-top: 110px;
+    box-sizing: border-box;
+    background-image:
+        url(../images/hero/green-eyes-mobile.png),
+        url(../images/hero/orange-eyes-mobile.png),
+        url(../images/hero/pink-eyes-mobile.png),
+        url(../images/hero/hero-icecream-mobile.png),
+        url(../images/hero/shadow-mobile.png),
+        url(../images/hero/dotts-mobile.png);
+    background-repeat: no-repeat;
+    background-position: left 153px bottom 125px, left 107px bottom 98px, left 159px bottom 49px, left 82px bottom, left 45px bottom -35px, left 50% bottom;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include mobile {
+        max-width: 480px;
+        height: 502px;
+        padding-top: 110px;
+        box-sizing: border-box;
+        background-image:
+            url(../images/hero/green-eyes-mobile.png),
+            url(../images/hero/orange-eyes-mobile.png),
+            url(../images/hero/pink-eyes-mobile.png),
+            url(../images/hero/hero-icecream-mobile.png),
+            url(../images/hero/shadow-mobile.png),
+            url(../images/hero/dotts-mobile.png);
+        background-position: left 153px bottom 125px, left 107px bottom 98px, left 159px bottom 49px, left 82px bottom, left 45px bottom -35px, left 50% bottom;
+    }
+
+    @include tablet {
+        max-width: 786px;
+        height: 415px;
+        padding-top: 104px;
+        box-sizing: border-box;
+        background-image:
+            url(../images/hero/green-eyes-tablet.png),
+            url(../images/hero/orange-eyes-tablet.png),
+            url(../images/hero/pink-eyes-tablet.png),
+            url(../images/hero/hero-icecream-tablet.png),
+            url(../images/hero/shadow-tablet.png),
+            url(../images/hero/dotts-tablet.png);
+        background-position: left 531px bottom 196px, left 458px bottom 153px, left 541px bottom 78px, left 418px bottom 0, left 380px bottom -45px, left bottom;
+        background-size: auto, auto, auto, auto, auto, auto;
+    }
+
+    @include desktop {
+        max-width: 1200px;
+        height: 664px;
+        padding-top: 118px;
+        box-sizing: border-box;
+        background-image:
+            url(../images/hero/green-eyes-desktop.png),
+            url(../images/hero/orange-eyes-desktop.png),
+            url(../images/hero/pink-eyes-desktop.png),
+            url(../images/hero/hero-icecream-desktop.png),
+            url(../images/hero/shadow-desctop.png),
+            url(../images/hero/dotts-desktop.png);
+        background-position: left 857px bottom 342px, left 723px bottom 266px, left 873px bottom 138px, left 651px bottom, left 540px bottom -100px, left 50% bottom 0;
+        background-size: auto, auto, auto, auto, auto, auto;
+
+    }
+}
+
+.hero {
+    background-color: var(--primary-bg-color);
+    width: 100%;
+    position: relative;
+
+            background-color: var(--primary-bg-color);
+            animation: bg-color 10s infinite;
+    
+            @keyframes bg-color {
+                0% {
+                        background-color: var(--primary-bg-color);
+                    }
+                
+                    25% {
+                        background-color: #f59935;
+                    }
+                
+                    50% {
+                        background-color: #ed61a2;
+                    }
+                
+                    75% {
+                        background-color: #72c487;
+                    }
+                
+                    100% {
+                        background-color: var(--primary-bg-color);
+                    }
+            }
+
+    
+    &-title {
+        color: var(--light-color);
+        font-family: 'Seymour One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 33px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        animation-delay: 500ms;
+
+        @include mobile {
+            font-size: 26px;
+            line-height: 33px;
+            width: 247px;
+        }
+
+        @include tablet {
+            font-size: 18px;
+            line-height: 23px;
+        }
+
+        @include desktop {
+            font-size: 38px;
+            line-height: 48px;
+            width: 367px;
+        }
+
+        & span {
+            font-family: 'Seymour One';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 26px;
+            line-height: 33px;
+
+            @include mobile {
+                font-size: 26px;
+                line-height: 33px;
+            }
+
+            @include tablet {
+                font-size: 16.2531px;
+                line-height: 13px;
+            }
+
+            @include desktop {
+                font-size: 38px;
+                line-height: 48px;
+            }
+        }
+    }
+
+    &-form {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        margin-top: 32px;
+    }
+
+    &-main-block {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-btn {
+        display: block;
+        background-color: transparent;
+        border: 0;
+        padding: 0;
+        width: 50px;
+        height: 16px;
+        background-image: url(../images/hero/arrow-two.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        transform: scale(1) rotate(0);
+        transition: transform 250ms;
+
+        &:focus,
+        &:hover {
+            transform: scale(1.5) rotate(-180deg);
+        }
+
+    }
+}
+
+.plate-bg {
+    position: absolute;
+    background-image:
+        url(../images/hero/plate-icecream.png);
+    background-repeat: no-repeat;
+
+    @include tablet {
+        bottom: -5px;
+        left: -185px;
+        width: 152px;
+        height: 152px;
+        background-size: 152px;
+    }
+
+    @include desktop {
+        bottom: -25px;
+        left: -240px;
+        width: 225px;
+        height: 225px;
+        background-size: 225px;
+
+    }
+}
+
+.hero-btn:hover+.plate-bg {
+    animation: spin 4000ms linear infinite;
+
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+}
+.hero-btn:focus+.plate-bg {
+    animation: spin 4000ms linear infinite;
+
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+}
+
+.secondary-btn {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 5px 10px;
+    text-align: center;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 1.25;
+    color: var(--primary-text-color);
+    background-color: transparent;
+    border: 2px solid var(--accent);
+    border-radius: 8px;
+    transition-property: color, border;
+    transition: $animation-time $animation-cubic;
+
+    &:hover {
+        border: 2px solid var(--primary-color-btn);
+    }
+
+    &:focus {
+        color: var(--light-color);
+    }
+
+    &:disabled {
+        color: var(--primary-text-color);
+        border: 2px solid var(--disabled-btn);
+    }
+
+    @include desktop {
+        padding: 12px 34px;
+        font-size: 14px;
+        line-height: 1.29;
+        border-radius: 10px;
+    }
+}
+
+.hero-about-link {
+    color: var(--accent);
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 10px;
+    padding: 7px;
+    transition: color $animation-time $animation-cubic;
+
+    &:hover {
+        color: var(--primary-color-btn);
+    }
+
+    &:focus {
+        color: var(--light-color);
+    }
+
+    &:disabled {
+        color: var(--disabled-btn);
+    }
+
+    @include mobile {
+        font-size: 8px;
+        line-height: 10px;
+    }
+
+    @include tablet {
+        font-size: 8px;
+        line-height: 10px;
+    }
+
+    @include desktop {
+        font-size: 14px;
+        line-height: 17px;
+    }
+}
+
+
+.benefits {
+    display: none;
+
+    @include mobile {
+        display: none;
+    }
+
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    @include desktop {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    &-block {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    }
+
+    &-item {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 28px;
+        line-height: 34px;
+        text-align: right;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #131313;
+      
+
+        @include desktop {
+            font-size: 46px;
+            line-height: 56px;
+        }
+
+        &-text {
+            font-family: 'Montserrat';
+            font-style: normal;
+            text-align: right;
+            font-weight: 400;
+            font-size: 8px;
+            line-height: 10px;
+            color: var(--light-color);
+
+            @include desktop {
+                font-size: 14px;
+                line-height: 17px;
+                text-transform: none;
+            }
+        }
+    }
+}
+
+.hero-text-block {
+    position: absolute;
+    display: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+    width: 151px;
+    color: var(--light-color);
+
+    @include mobile {
+        display: none;
+    }
+
+    @include tablet {
+        display: flex;
+        margin-left: 185px;
+        margin-top: 56px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    @include desktop {
+        display: flex;
+        font-size: 14px;
+        line-height: 140%;
+        margin-left: 240px;
+        margin-top: 109px;
+        gap: 32px;
+        width: 200px;
+    }
+}

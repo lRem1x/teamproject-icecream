@@ -1,0 +1,119 @@
+<header class="header">
+  <div class="container">
+    <nav class="header-nav">
+      <a href="./index.html" class="logo">
+        <picture class="about-picture">
+          <source
+            srcset="
+              ./images/header-logo/logo-des.png    1x,
+              ./images/header-logo/logo-des@2x.png 2x
+            "
+            media="(min-width:1200px)"
+          />
+          <source
+            srcset="
+              ./images/header-logo/logo-tab.png    1x,
+              ./images/header-logo/logo-tab@2x.png 2x
+            "
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="
+              ./images/header-logo/logo-mob.png    1x,
+              ./images/header-logo/logo-mob@2x.png 2x
+            "
+            media="(max-width:767px)"
+          />
+          <img src="./images/header-logo/logo-tab.png" alt="logo" /> </picture
+      ></a>
+      <div class="header-des-nav">
+        <ul class="header-des-list">
+          <li class="header-des-item">
+            <a href="./index.html" class="header-des-link">Home</a>
+          </li>
+          <li class="header-des-item">
+            <a href="#about" class="header-des-link">How it’s made?</a>
+          </li>
+          <li class="header-des-item">
+            <a href="#products" class="header-des-link">Our products</a>
+          </li>
+          <li class="header-des-item">
+            <a href="#contact" class="header-des-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="header-tab">
+        <button
+          type="button"
+          class="header-memu-btn"
+          aria-controls="menu-set"
+          data-menu-button
+        >
+          <svg
+            class="header-memu-svg"
+            width="32"
+            height="32"
+            aria-label="turn the menu"
+          >
+            <use
+              href="./images/svg-footer/sprite.svg.svg#icon-menu"
+              class="icon-menu"
+            ></use>
+            <use
+              href="./images/svg-footer/sprite.svg.svg#icon-close-menu"
+              class="icon-cross"
+            ></use>
+          </svg>
+        </button>
+        <button type="button" class="primary-btn buy-btn-tab" data-modal-open>
+          Buy now
+          <svg class="menu-svg-one" width="12" height="12">
+            <use
+              href="./images/svg-footer/sprite.svg.svg#icon-button-ice"
+            ></use>
+          </svg>
+          <svg class="menu-svg-two" width="12" height="12">
+            <use
+              href="./images/svg-footer/sprite.svg.svg#icon-button-arrow"
+            ></use>
+          </svg>
+        </button>
+      </div>
+      <div class="menu-set" id="menu-set" data-menu>
+        <div class="menu-set-container">
+          <ul class="menu-set-list" data-menu-link>
+            <li class="menu-set-item">
+              <a href="./index.html" class="menu-set-link">Home</a>
+            </li>
+            <li class="menu-set-item">
+              <a href="#about" class="menu-set-link">How it’s made?</a>
+            </li>
+            <li class="menu-set-item">
+              <a href="#products" class="menu-set-link">Our products</a>
+            </li>
+            <li class="menu-set-item">
+              <a href="#contact" class="menu-set-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <button
+          type="button"
+          class="primary-btn buy-btn-mob"
+          data-modal-mob-open
+        >
+          Buy now
+          <svg class="menu-svg-one" width="12" height="12">
+            <use
+              href="./images/svg-footer/sprite.svg.svg#icon-button-ice"
+            ></use>
+          </svg>
+          <svg class="menu-svg-two" width="12" height="12">
+            <use
+              href="./images/svg-footer/sprite.svg.svg#icon-button-arrow"
+            ></use>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>

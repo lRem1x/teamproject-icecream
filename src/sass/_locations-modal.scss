@@ -1,0 +1,89 @@
+.modal-location-backdrop{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    background-color: rgba(99, 229, 238, 0.252);
+    transition: opacity 500ms linear, visibility 500ms;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+}
+
+.modal-location {
+position: absolute;
+width: calc(100% - 30px);
+max-width: 280px;
+background: #fcfcfc;
+border: 2px solid #f8d24e;
+border-radius: 10px;
+padding:28px;
+margin-top: 75px;
+transition: transform $animation-time $animation-cubic;
+
+@media screen and (min-width: 768px) {
+    padding: 32px 60px;
+    width: 568px;
+    max-width: 568px;
+}
+}
+
+.modal-location-close{
+    position: absolute;
+    right: 8px;
+    top: 0px;
+    width: 16px;
+    height: 16px;
+    background-color: transparent;
+    border: none;
+
+    @include tablet {
+        right: 20px;
+        top: 20px;
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.modal-location-svg{
+    fill: var(--primary-text-color);
+    transition: fill $animation-time $animation-cubic;
+    &:hover,
+    &:focus {
+        fill:var(--accent);
+    }
+}
+
+
+.modal-title-location {
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    @include tablet{
+        margin-bottom: 32px;
+    }
+}
+
+.modal-location-map {
+    width: 224px;
+    margin-bottom: 24px;
+    @include tablet {
+        width: 448px;
+        margin-bottom: 32px;
+    }
+}
+
+.open-map-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 135px;
+    @include tablet{
+        max-width: 145px;
+    }
+}

@@ -1,0 +1,99 @@
+.primary-btn{
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 12px 34px;
+    text-align: center;
+
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 14px;
+    line-height:1.29;
+    
+    color: var(--primary-text-color);
+    background-color: var(--accent);
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: color $animation-time $animation-cubic, visibility $animation-time, background-color $animation-time $animation-cubic, visibility $animation-time;
+    
+    &:hover{
+        background-color: var(--primary-color-btn);
+    }
+    &:focus{
+        color: var(--light-color);
+    }
+    &:disabled{
+        color: var(--primary-text-color);
+        background-color: var(--disabled-btn);
+    }
+}
+
+.menu-svg-one {
+    margin-left: 5px;
+    height: 20px;
+    transition: transform 250ms linear;
+    .primary-btn:hover &,
+    .primary-btn:focus & {
+        transform: translateY(-40px);
+    }
+}
+
+.menu-svg-two {
+    position: absolute;
+    top: 39%;
+    right: 35px;
+    fill: currentColor;
+
+    transform: translateY(40px);
+    transition: transform 250ms linear;
+
+    .primary-btn:hover &,
+    .primary-btn:focus & {
+        transform: translateY(0);
+    }
+}
+
+// .primary-btn-svg{
+//     fill:currentColor;
+//     height: 12px;
+//     transition: fill $animation-time $animation-cubic, visibility $animation-time;
+// }
+
+.modal__send-button{
+display: flex;
+align-items: center;
+text-align: center;
+    padding: 5px 10px;
+    
+
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 14px;
+    line-height:1.25;
+    
+    color: var(--primary-text-color);
+    background-color: transparent;
+    border: 2px solid var(--accent);
+    border-radius: 8px;
+    transition: color $animation-time $animation-cubic, visibility $animation-time, border $animation-time $animation-cubic, visibility $animation-time;
+
+    &:hover{
+        border: 2px solid var(--primary-color-btn);
+    }
+    &:focus{
+        color: var(--light-color);
+    }
+    &:disabled{
+        color: var(--primary-text-color);
+        border: 2px solid #ABABAB;
+    }
+
+    @include desktop{
+        padding: 12px 34px;
+        font-size: 14px;
+        line-height:1.29;
+        border-radius: 10px;        
+    }
+}

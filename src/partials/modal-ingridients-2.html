@@ -1,0 +1,125 @@
+<div class="backdrop-ingrid is-hidden" data-modal-ingrid-2>
+  <div class="modal-ingrid">
+    <button type="button" class="modal-ingrid-close" data-modal-ingrid-close-2>
+      <svg class="modal-ingrid-cross" width="20" height="20">
+        <use
+          href="./images/modal-ingridients/icon.svg#icon-close-black-18dp-2-1"
+        ></use>
+      </svg>
+    </button>
+    <h3 class="modal-ingrid-title">Chocolate icecream</h3>
+    <div class="modal-ingrid-picture-wrap">
+      <picture>
+        <source
+          class="modal-ingrid-picture"
+          srcset="
+            ./images/modal-ingridients/ice-cream-1x.png 1x,
+            ./images/modal-ingridients/ice-cream-2x.png 2x
+          "
+          media="(min-width:1200px)"
+        />
+        <img
+          class="modal-ingrid-picture"
+          src="./images/modal-ingridients/ice-cream-1x.png"
+          alt="icecream"
+          width="131"
+          height="131"
+        />
+      </picture>
+    </div>
+    <h4 class="visually-hidden">callories</h4>
+    <div class="callories-wrap">
+      <ul class="callories-list list">
+        <li class="callories-item">
+          <div class="callories-number-item">320</div>
+          <span class="callories-text">kcal</span>
+        </li>
+        <li class="callories-item">
+          <div class="callories-number-item">4g</div>
+          <span class="callories-text"> Protein</span>
+        </li>
+        <li class="callories-item">
+          <div class="callories-number-item">8,2g</div>
+          <span class="callories-text">Fats</span>
+        </li>
+        <li class="callories-item">
+          <div class="callories-number-item">40,4g</div>
+          <span class="callories-text">Carbs</span>
+        </li>
+      </ul>
+    </div>
+    <div class="callories-ingredients-wrap">
+      <h4 class="ingredients-title">Ingredients</h4>
+      <ul class="callories-table list">
+        <li class="callories-table-item">
+          <p class="callories-table-text">Milk</p>
+          <p class="callories-table-text">100ml</p>
+        </li>
+        <li class="callories-table-item">
+          <p class="callories-table-text">Belgian chocolate</p>
+          <p class="callories-table-text">20g</p>
+        </li>
+        <li class="callories-table-item">
+          <p class="callories-table-text">Cream</p>
+          <p class="callories-table-text">150ml</p>
+        </li>
+        <li class="callories-table-item">
+          <p class="callories-table-text">Cocoa powder</p>
+          <p class="callories-table-text">20g</p>
+        </li>
+        <li class="callories-table-item">
+          <p class="callories-table-text">Sugar</p>
+          <p class="callories-table-text">40g</p>
+        </li>
+        <li class="callories-table-item">
+          <p class="callories-table-text">Vanilla sugar</p>
+          <p class="callories-table-text">10g</p>
+        </li>
+      </ul>
+    </div>
+    <form class="ingredients-modal-form">
+      <div class="ingredients-input">
+        <input
+          type="text"
+          class="ingredients-input-form"
+          name="user-name-two"
+          required
+          id="user-name-two"
+          placeholder=" "
+          pattern=".{6,}"
+        />
+        <label for="user-name-two" class="ingredients-input-title">Name</label>
+      </div>
+      <div class="ingredients-input">
+        <input
+          type="tel"
+          class="ingredients-input-form"
+          name="user-tel-two"
+          required
+          id="user-phone-two"
+          minlength="3"
+          placeholder=" "
+          pattern=".{10,}"
+          title="+38 000 000 00 00"
+        />
+        <label for="user-phone-two" class="ingredients-input-title"
+          >Phone</label
+        >
+      </div>
+
+      <div class="ingredients-input">
+        <textarea
+          class="ingredients-input-comment"
+          name="user-comment-two"
+          id="user-comment-two"
+          placeholder=" "
+        ></textarea>
+        <label for="user-comment-two" class="ingredients-input-title-comment"
+          >Comment</label
+        >
+      </div>
+
+      <button type="submit" class="primary-btn">Submit</button>
+    </form>
+  </div>
+</div>

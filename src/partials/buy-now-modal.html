@@ -1,0 +1,137 @@
+<div class="modal-buy-now__backdrop is-hidden" data-modal>
+  <div class="modal-buy-now">
+    <button type="button" class="modal-buy-now__button-close" data-modal-close>
+      <svg class="modal-buy-now__button-close-svg" width="11" height="11">
+        <use href="./images/svg-footer/sprite.svg.svg#icon-cross"></use>
+      </svg>
+    </button>
+
+    <h3 class="modal-buy-now__title">Buy now</h3>
+
+    <form>
+      <div class="icecream-check">
+        <input
+          type="checkbox"
+          name="icecream"
+          value="ice cream"
+          class="modal-check visually-hidden"
+          id="icecream"
+        />
+        <label for="icecream" class="check-content">
+          <div class="icecream-title icecream-title--icecream">
+            <div class="img-tumb">
+              <img
+                srcset="
+                  ./images/buy-now-modal/ice-cream-desk-1x.png 1x,
+                  ./images/buy-now-modal/ice-cream-desk-2x.png 2x
+                "
+                src="./images/buy-now-modal/ice-cream-desk-1x.png"
+                alt="ice-cream"
+                width="132"
+              />
+            </div>
+            ice cream
+          </div>
+        </label>
+
+        <input
+          type="checkbox"
+          name="ice coffee"
+          value="ice coffee"
+          class="modal-check visually-hidden"
+          id="ice coffee"
+          checked
+          autofocus
+        />
+        <label for="ice coffee" class="check-content">
+          <div class="icecream-title icecream-title--coffee">
+            <div class="img-tumb--coffee">
+              <img
+                srcset="
+                  ./images/buy-now-modal/ice-coffe-desk-1x.png 1x,
+                  ./images/buy-now-modal/ice-coffe-desk-2x.png 2x
+                "
+                src="./images/buy-now-modal/ice-coffe-desk-1x.png"
+                alt="ice-coffe"
+                width="132"
+              />
+            </div>
+            ice coffee
+          </div>
+        </label>
+
+        <input
+          type="checkbox"
+          name="milkshake"
+          value="milkshake"
+          class="modal-check visually-hidden"
+          id="milkshake"
+        />
+        <label for="milkshake" class="check-content">
+          <div class="icecream-title icecream-title--milkshake">
+            <div class="img-tumb--milkshake">
+              <img
+                srcset="
+                  ./images/buy-now-modal/milkshake-desk-1x.png 1x,
+                  ./images/buy-now-modal/milkshake-desk-2x.png 2x
+                "
+                src="./images/buy-now-modal/milkshake-desk-1x.png"
+                alt="milkshake"
+                width="132"
+              />
+            </div>
+            milkshake
+          </div>
+        </label>
+      </div>
+
+      <div class="modal-buy-now__form">
+        <input
+          class="modal-buy-now__form-input"
+          type="text"
+          name="user-name"
+          id="modal-buy-now-name"
+          placeholder=" "
+          required
+          pattern=".{6,}"
+        />
+        <label for="modal-buy-now-name" class="modal-buy-now__input-title"
+          >Name</label
+        >
+      </div>
+
+      <div class="modal-buy-now__form">
+        <input
+          class="modal-buy-now__form-input"
+          type="text"
+          name="user-tel"
+          id="modal-buy-now-phone"
+          placeholder=" "
+          required
+          pattern=".{10,}"
+        />
+        <label for="modal-buy-now-phone" class="modal-buy-now__input-title"
+          >Phone</label
+        >
+      </div>
+
+      <div class="modal-buy-now__form">
+        <textarea
+          class="modal-buy-now__user-comment"
+          name="user-comment"
+          id="modal-buy-now-comment"
+          placeholder=" "
+        ></textarea>
+        <label
+          for="modal-buy-now-comment"
+          class="modal-buy-now__input-title-comment"
+          >Comment</label
+        >
+      </div>
+
+      <button type="submit" class="modal-buy-now__send-button primary-btn">
+        Submit
+      </button>
+    </form>
+  </div>
+</div>

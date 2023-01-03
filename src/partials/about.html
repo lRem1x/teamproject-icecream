@@ -1,0 +1,72 @@
+<section class="about">
+  <div class="about-container container">
+    <p class="about-pre-title" id="about">tradition and love</p>
+    <h2 class="about-title">how it’s made?</h2>
+    <div class="about-flex">
+      <picture class="about-picture">
+        <source
+          srcset="
+            ./images/about/cow-1x-desk-min.png 1x,
+            ./images/about/cow-2x-desk-min.png 2x
+          "
+          media="(min-width:1200px)"
+        />
+        <source
+          srcset="
+            ./images/about/cow-1x-tab-min.png 1x,
+            ./images/about/cow-2x-tab-min.png 2x
+          "
+          media="(min-width:768px)"
+        />
+        <source
+          srcset="
+            ./images/about/cow-1x-mob-min.png 1x,
+            ./images/about/cow-2x-mob-min.png 2x
+          "
+          media="(max-width:767px)"
+        />
+        <img
+          src="./images/about/cow-1x-desk-min.png"
+          alt="фон корови"
+          class="about-img"
+        />
+      </picture>
+      <div class="about-flex-text">
+        <div class="about-text">
+          <p class="about-text-first">
+            Ice is a place where you will become not only a little happier, but
+            also healthier. Health is the main value for us, and we follow it
+            when creating our handmade desserts.
+          </p>
+          <p class="about-text-second">
+            We use traditional recipes and 100% natural ingredients. Our
+            products are so natural that they can be given to children from the
+            age of three years. Sweets lovers can expect 55 types of ice cream,
+            15 types of coffee and 23 milkshakes.
+          </p>
+          <p class="about-text-third">
+            This is enough to choose ice cream and coffee for any mood!
+          </p>
+        </div>
+        <button
+          class="primary-btn about-btn button"
+          type="button"
+          data-modal-about-open
+          aria-label="read more button"
+        >
+          Read more
+          <svg class="menu-svg-one" width="12" height="12">
+            <use
+              href="./images/svg-footer/sprite.svg.svg#icon-button-ice"
+            ></use>
+          </svg>
+          <svg class="menu-svg-two" width="12" height="12">
+            <use
+              href="./images/svg-footer/sprite.svg.svg#icon-button-arrow"
+            ></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>

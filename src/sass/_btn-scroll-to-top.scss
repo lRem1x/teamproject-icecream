@@ -1,0 +1,51 @@
+.btn-scroll-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 25px;
+  z-index: 20;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-hidden {
+  display: none;
+}
+
+.btn-scroll-to-top-svg {
+  width: 30px;
+  height: 30px;
+  fill: var(--accent);
+  transform: scale(1);
+  animation: movebtn 3s ease-in-out infinite;
+  transition: all $animation-time $animation-cubic;
+  @include tablet {
+    width: 50px;
+    height: 50px;
+  }
+
+  &:hover {
+    fill: var(--primary-color-btn);
+    transform: scale(1.1);
+    animation: none;
+  }
+}
+
+@keyframes movebtn {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(20px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  75% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
