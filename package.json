@@ -2,20 +2,20 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://Yuliia21BM.github.io/team-project-ice-cream-shop",
+  "homepage": "https://lRem1x.github.io/teamproject-icecream",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /team-project-ice-cream-shop/"
+    "build": "parcel build src/*.html --public-url /teamproject-icecream/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/goitacademy/team-project-ice-cream-shop.git"
+    "url": "git+https://github.com/goitacademy/teamproject-icecream.git"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/goitacademy/team-project-ice-cream-shop/issues"
+    "url": "https://github.com/goitacademy/teamproject-icecream/issues"
   },
   "dependencies": {
     "modern-normalize": "^1.1.0"
